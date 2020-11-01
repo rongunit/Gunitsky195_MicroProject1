@@ -59,8 +59,7 @@ endLoop:
 
 exit:   ;считываем символ и завершаем выполнение программы
         call [getch]
-        push 0
-        call ExitProcess
+        stdcall [ExitProcess], 0
 ;============================================
 
 
